@@ -12,20 +12,25 @@ struct AstronautView: View {
     let astronaut: Astronaut
     
     var body: some View {
-        ScrollView{
-            VStack{
-                Image(astronaut.id)
-                    .resizable()
-                    .scaledToFit()
-                
-                Text(astronaut.description)
-                    .padding()
-                    .foregroundColor(.white)
+        GeometryReader{ geo in
+            ScrollView{
+                VStack{
+                    Image(astronaut.id)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geo.size.width * 0.97)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding(.bottom)
+                    
+                    Text(astronaut.description)
+                        .padding()
+                        .foregroundColor(.white)
+                }
             }
+            .background(.darkBackground)
+            .navigationTitle(astronaut.name)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .background(.darkBackground)
-        .navigationTitle(astronaut.name)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
