@@ -74,10 +74,10 @@
 				2A4FC6FB294E7DC00094DE24 /* Mission.swift */,
 				2A4FC6F7294E73410094DE24 /* Astronaut.swift */,
 				2A4FC6F9294E750B0094DE24 /* Bundle-Decodable.swift */,
+				2A4553FE294ED0A7003F12EE /* Color-Theme.swift */,
 				2A4FC6F3294E70470094DE24 /* astronauts.json */,
 				2A4FC6F5294E70780094DE24 /* missions.json */,
 				2AC47D81294BC8980040B5F0 /* Assets.xcassets */,
-				2A4553FE294ED0A7003F12EE /* Color-Theme.swift */,
 				2AC47D83294BC8980040B5F0 /* Preview Content */,
 			);
 			path = Moonshot;
