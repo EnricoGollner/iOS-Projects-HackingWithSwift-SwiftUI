@@ -20,8 +20,9 @@ extension Bundle{
         let decoder = JSONDecoder()
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "y-MM-dd"  // First it needs to know how it is...
+        formatter.dateFormat = "y-MM-dd"
         decoder.dateDecodingStrategy = .formatted(formatter)
+        // We're saying: "When swift finds a date, they will be in the format 'y-MM-dd', read them in so we can work with them as real dates right under text strings"
         
         
         guard let loaded = try? decoder.decode(T.self, from: data) else{

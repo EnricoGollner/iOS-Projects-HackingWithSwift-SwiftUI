@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4553FF294ED0A7003F12EE /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4553FE294ED0A7003F12EE /* Color-Theme.swift */; };
 		2A4FC6F4294E70470094DE24 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FC6F3294E70470094DE24 /* astronauts.json */; };
 		2A4FC6F6294E70780094DE24 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FC6F5294E70780094DE24 /* missions.json */; };
 		2A4FC6F8294E73410094DE24 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FC6F7294E73410094DE24 /* Astronaut.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4553FE294ED0A7003F12EE /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		2A4FC6F3294E70470094DE24 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		2A4FC6F5294E70780094DE24 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		2A4FC6F7294E73410094DE24 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2A4FC6F3294E70470094DE24 /* astronauts.json */,
 				2A4FC6F5294E70780094DE24 /* missions.json */,
 				2AC47D81294BC8980040B5F0 /* Assets.xcassets */,
+				2A4553FE294ED0A7003F12EE /* Color-Theme.swift */,
 				2AC47D83294BC8980040B5F0 /* Preview Content */,
 			);
 			path = Moonshot;
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A4FC6F8294E73410094DE24 /* Astronaut.swift in Sources */,
+				2A4553FF294ED0A7003F12EE /* Color-Theme.swift in Sources */,
 				2AC47D80294BC8970040B5F0 /* ContentView.swift in Sources */,
 				2AC47D7E294BC8970040B5F0 /* MoonshotApp.swift in Sources */,
 				2A4FC6FA294E750B0094DE24 /* Bundle-Decodable.swift in Sources */,
