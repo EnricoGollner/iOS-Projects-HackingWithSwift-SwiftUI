@@ -63,6 +63,7 @@ struct MissionView: View {
             .background(.darkBackground)
         }
     }
+    
     init(mission: Mission, astronauts: [String: Astronaut]){
         self.astronauts = astronauts
         

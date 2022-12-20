@@ -47,7 +47,7 @@ struct MissionLayoutListView: View {
                 .listRowBackground(Color.darkBackground)
             }
         }
-        .listStyle(.plain)
+        .listStyle(.grouped)
     }
 }
 
