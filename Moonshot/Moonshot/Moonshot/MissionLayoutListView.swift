@@ -44,9 +44,10 @@ struct MissionLayoutListView: View {
                             .stroke(.lightBackground)
                     )
                 }
+                .listRowBackground(Color.darkBackground)
             }
         }
-        .padding([.horizontal, .bottom])
+        .listStyle(.plain)
     }
 }
 

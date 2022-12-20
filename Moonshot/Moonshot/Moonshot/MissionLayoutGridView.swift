@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct MissionLayoutGridView: View {
-    let columns = [
-        GridItem(.adaptive(minimum: 150))
-    ]
-    
     let astronauts: [String: Astronaut]
     let missions: [Mission]
+    
+    let columns: [GridItem]
     
     var body: some View {
         ScrollView{
@@ -60,6 +58,6 @@ struct MissionLayoutGridView_Previews: PreviewProvider {
     static var missions: [Mission] = Bundle.main.decode("missions.json")
     
     static var previews: some View {
-        MissionLayoutGridView(astronauts: astronauts, missions: missions)
+        MissionLayoutGridView(astronauts: astronauts, missions: missions, columns: [GridItem(.adaptive(minimum: 150))])
     }
 }

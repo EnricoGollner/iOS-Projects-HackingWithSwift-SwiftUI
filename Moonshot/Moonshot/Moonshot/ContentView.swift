@@ -37,7 +37,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 if showAsGrid{
-                    MissionLayoutGridView(astronauts: astronauts, missions: missions)
+                    MissionLayoutGridView(astronauts: astronauts, missions: missions, columns: columns)
                         .missionLayoutStyle()
                 } else{
                     MissionLayoutListView(astronauts: astronauts, missions: missions)
@@ -45,8 +45,10 @@ struct ContentView: View {
                 }
             }
             .toolbar{
-                Button("Show as Lists"){
+                Button{
                     showAsGrid.toggle()
+                } label: {
+                    showAsGrid ? Text("Show as Lists") : Text("Show as Grids")
                 }
             }
         }
