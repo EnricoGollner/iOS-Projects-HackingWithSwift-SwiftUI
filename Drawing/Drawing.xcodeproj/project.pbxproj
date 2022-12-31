@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A289BF32960684200BFEBE3 /* Studying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A289BF22960684200BFEBE3 /* Studying.swift */; };
+		2A289BF52960793E00BFEBE3 /* Studying2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A289BF42960793E00BFEBE3 /* Studying2.swift */; };
 		2ACDECF7295181E000504160 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACDECF6295181E000504160 /* DrawingApp.swift */; };
 		2ACDECF9295181E000504160 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACDECF8295181E000504160 /* ContentView.swift */; };
 		2ACDECFB295181E200504160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACDECFA295181E200504160 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A289BF22960684200BFEBE3 /* Studying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studying.swift; sourceTree = "<group>"; };
+		2A289BF42960793E00BFEBE3 /* Studying2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studying2.swift; sourceTree = "<group>"; };
 		2ACDECF3295181E000504160 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACDECF6295181E000504160 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		2ACDECF8295181E000504160 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				2ACDECF6295181E000504160 /* DrawingApp.swift */,
 				2ACDECF8295181E000504160 /* ContentView.swift */,
+				2A289BF42960793E00BFEBE3 /* Studying2.swift */,
+				2A289BF22960684200BFEBE3 /* Studying.swift */,
 				2ACDECFA295181E200504160 /* Assets.xcassets */,
 				2ACDECFC295181E200504160 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				2ACDECF9295181E000504160 /* ContentView.swift in Sources */,
 				2ACDECF7295181E000504160 /* DrawingApp.swift in Sources */,
+				2A289BF32960684200BFEBE3 /* Studying.swift in Sources */,
+				2A289BF52960793E00BFEBE3 /* Studying2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
