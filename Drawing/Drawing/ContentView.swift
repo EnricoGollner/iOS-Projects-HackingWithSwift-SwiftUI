@@ -7,55 +7,126 @@
 
 import SwiftUI
 
-struct Checkerboard: Shape{
-    var rows: Int
-    var columns: Int
+struct Arrow: Shape{
+    var isBoldLine: Bool
     
-    var animatableData: AnimatablePair<Double, Double>{
-        get {
-            AnimatablePair(Double(rows), Double(columns))
-        }
-        
-        set{
-            rows = Int(newValue.first)
-            columns = Int(newValue.second)
-        }
+    var animatableData: Bool{
+        get{ isBoldLine }
+        set{ isBoldLine = newValue }
     }
     
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
-        let rowSize = rect.height / Double(rows)
-        let columnSize = rect.width / Double(columns)
+        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY / 4))
+        path.addLine(to: CGPoint(x: rect.maxX / 3, y: rect.maxY / 4))
+        path.addLine(to: CGPoint(x: rect.maxX / 3, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX / 1.5, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX / 1.5, y: rect.maxY / 4))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY / 4))
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
         
-        for row in 0..<rows{
-            for column in 0..<columns{
-                if (row + column).isMultiple(of: 2){
-                    let startX = columnSize * Double(column)
-                    let startY = rowSize * Double(row)
-                    
-                    let rect = CGRect(x: startX, y: startY, width: columnSize, height: rowSize)
-                    
-                    path.addRect(rect)
-                }
-            }
-        }
         return path
     }
 }
 
-struct ContentView: View {
-    @State private var rows = 4
-    @State private var columns = 4
+struct ArrowView: View{
+    @State private var isBoldLine = false
     
-    var body: some View {
-        Checkerboard(rows: rows, columns: columns)
+    var body: some View{
+        Arrow(isBoldLine: isBoldLine)
+            .stroke(.red, style: StrokeStyle(
+                lineWidth: isBoldLine ? 20 : 5,
+                lineCap: .round, lineJoin: .round))
             .onTapGesture {
-                withAnimation(.linear(duration: 2)){
-                    rows = 8
-                    columns = 16
+                withAnimation{
+                    isBoldLine.toggle()
                 }
             }
+    }
+}
+
+struct ColorCyclingRectangle: View{
+    var amount = 0.0
+    var steps = 100
+    
+    var startPoint = UnitPoint(x: 0.5, y: 0.0)
+    var endPoint = UnitPoint(x: 0.5, y: 1.0)
+    
+    var body: some View{
+        ZStack{
+            ForEach(0..<steps){ value in
+                Rectangle()
+                    .inset(by: Double(value))
+                    .strokeBorder(
+                        LinearGradient(colors: [
+                            color(for: value, brightness: 1),
+                            color(for: value, brightness: 0.2)
+                        ], startPoint: startPoint, endPoint: endPoint)
+                    )
+            }
+        }
+        .drawingGroup()  // Using Metal framework instead Core Animation
+    }
+    
+    func color(for value: Int, brightness: Double) -> Color{
+        var targetHue = Double(value) / Double(steps) + amount
+        
+        if targetHue > 1{
+            targetHue -= 1
+        }
+        
+        return Color(hue: targetHue, saturation: 1, brightness: brightness)
+    }
+}
+
+struct ContentView: View {
+    @State private var lineWidthAmount = 5.0
+    @State private var isBoldLine = false
+    @State private var colorCycle = 1.0
+    
+    @State private var start = UnitPoint(x: 0.5, y: 0.0)  // Top
+    @State private var end = UnitPoint(x: 0.5, y: 1.0)  // Bottom
+    
+    var body: some View {
+        // Challenges:
+        VStack{
+            ScrollView{
+                Spacer()
+                
+                ArrowView()
+                    .frame(width: 200, height: 300)
+                
+                
+                Spacer()
+                
+                ColorCyclingRectangle(amount: colorCycle, startPoint: start, endPoint: end)
+                    .frame(width: 300, height: 300)
+                Slider(value: $colorCycle)
+                    .padding()
+                
+                Group{
+                    Text("Start X")
+                    Slider(value: $start.x)
+                        .padding([.horizontal, .bottom])
+                    
+                    Text("Start Y")
+                    Slider(value: $start.y)
+                        .padding([.horizontal, .bottom])
+                    
+                    Text("End X")
+                    Slider(value: $end.x)
+                        .padding([.horizontal, .bottom])
+                    
+                    Text("End Y")
+                    Slider(value: $end.y)
+                        .padding(.horizontal)
+                }
+                
+                Spacer()
+            }
+        }
     }
 }
 

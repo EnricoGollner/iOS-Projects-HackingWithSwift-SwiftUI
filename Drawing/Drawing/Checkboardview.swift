@@ -45,14 +45,23 @@ struct Checkerboard: Shape{
 }
 
 
-struct Checkboarder: View {
+struct CheckboardView: View {
+    @State private var rows = 4
+    @State private var columns = 4
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Checkerboard(rows: rows, columns: columns)
+            .onTapGesture {
+                withAnimation(.linear(duration: 3)){
+                    rows = 8
+                    columns = 16
+                }
+            }
     }
 }
 
-struct Checkboarder_Previews: PreviewProvider {
+struct CheckboardView_Previews: PreviewProvider {
     static var previews: some View {
-        Checkboarder()
+        CheckboardView()
     }
 }
