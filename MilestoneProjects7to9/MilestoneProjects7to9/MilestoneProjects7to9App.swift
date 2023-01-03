@@ -1,6 +1,6 @@
 //
-//  millestoneProjects7_9App.swift
-//  millestoneProjects7-9
+//  MilestoneProjects7to9App.swift
+//  MilestoneProjects7to9
 //
 //  Created by Enrico Sousa Gollner on 02/01/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct millestoneProjects7_9App: App {
+struct MilestoneProjects7to9App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
