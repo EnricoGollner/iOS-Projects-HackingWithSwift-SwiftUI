@@ -13,6 +13,9 @@ struct MissionsLayoutModifier: ViewModifier{
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
+            .toolbarBackground(Color.darkBackground, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+        
     }
 }
 
