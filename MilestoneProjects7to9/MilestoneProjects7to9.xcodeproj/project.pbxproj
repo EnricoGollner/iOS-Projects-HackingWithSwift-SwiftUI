@@ -12,6 +12,8 @@
 		2A3755B42963CF57000AC946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3755B32963CF57000AC946 /* Assets.xcassets */; };
 		2A3755B72963CF57000AC946 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3755B62963CF57000AC946 /* Preview Assets.xcassets */; };
 		2A3755C02963DCEB000AC946 /* HabitViewInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3755BF2963DCEB000AC946 /* HabitViewInList.swift */; };
+		2A3755C42963DE1C000AC946 /* ActiviteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3755C32963DE1C000AC946 /* ActiviteItem.swift */; };
+		2A3755C62963DFE6000AC946 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3755C52963DFE6000AC946 /* Activities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		2A3755B32963CF57000AC946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3755B62963CF57000AC946 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A3755BF2963DCEB000AC946 /* HabitViewInList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewInList.swift; sourceTree = "<group>"; };
+		2A3755C32963DE1C000AC946 /* ActiviteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiviteItem.swift; sourceTree = "<group>"; };
+		2A3755C52963DFE6000AC946 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				2A3755AF2963CF56000AC946 /* MilestoneProjects7to9App.swift */,
 				2A3755B12963CF56000AC946 /* ContentView.swift */,
+				2A3755C32963DE1C000AC946 /* ActiviteItem.swift */,
+				2A3755C52963DFE6000AC946 /* Activities.swift */,
 				2A3755BF2963DCEB000AC946 /* HabitViewInList.swift */,
 				2A3755B32963CF57000AC946 /* Assets.xcassets */,
 				2A3755B52963CF57000AC946 /* Preview Content */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3755C42963DE1C000AC946 /* ActiviteItem.swift in Sources */,
 				2A3755B22963CF56000AC946 /* ContentView.swift in Sources */,
 				2A3755B02963CF56000AC946 /* MilestoneProjects7to9App.swift in Sources */,
+				2A3755C62963DFE6000AC946 /* Activities.swift in Sources */,
 				2A3755C02963DCEB000AC946 /* HabitViewInList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
