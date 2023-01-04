@@ -8,7 +8,7 @@
 import Foundation
 
 class Activities: ObservableObject{
-    @Published var listOfActivities = [ActiviteItem]() {
+    @Published var listOfActivities = [ActivityItem]() {
         didSet{
             if let encoded = try? JSONEncoder().encode(listOfActivities){
                 UserDefaults.standard.set(encoded, forKey: "listOfActivities")
@@ -16,11 +16,10 @@ class Activities: ObservableObject{
         }
     }
     
-    
     init(){
-        if let savedItems = try? UserDefaults.standard.data(forKey: "listOfActivities"){
-            if let decodedItems = try? JSONDecoder().decode([ActiviteItem].self, from: savedItems){
-                listOfActivities = decodedItems
+        if let savedListEncoded = UserDefaults.standard.data(forKey: "listofActivities"){
+            if let decodedList = try? JSONDecoder().decode([ActivityItem].self, from: savedListEncoded){
+                listOfActivities = decodedList
                 return
             }
         }
