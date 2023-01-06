@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F66544AD-1058-4752-BD5D-7F7A14B14992"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F33686AE-161F-4103-96F8-EE395EE66E7A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MilestoneProjects7to9/DescriptionActivityView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "DescriptionActivityView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6824587E-B24D-4738-BA0D-350D2C4033AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MilestoneProjects7to9/DescriptionActivityView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "updateAnActivity(idPassed:times:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6824587E-B24D-4738-BA0D-350D2C4033AD - 275eb172f4869049"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MilestoneProjects7to9.DescriptionActivityView.updateAnActivity(idPassed: Foundation.UUID, times: Swift.Int) -&gt; ()"
+                  moduleName = "MilestoneProjects7to9"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enrico.eu/Documents/Github/iOS-Projects/MilestoneProjects7to9/MilestoneProjects7to9/DescriptionActivityView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "6824587E-B24D-4738-BA0D-350D2C4033AD - 9d09eb9b5d192b13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MilestoneProjects7to9.ActivityItem) -&gt; Swift.Bool in MilestoneProjects7to9.DescriptionActivityView.updateAnActivity(idPassed: Foundation.UUID, times: Swift.Int) -&gt; ()"
+                  moduleName = "MilestoneProjects7to9"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enrico.eu/Documents/Github/iOS-Projects/MilestoneProjects7to9/MilestoneProjects7to9/DescriptionActivityView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CAC7D7D-7FCA-497A-B4C0-C4499A71BBD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MilestoneProjects7to9/DescriptionActivityView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "updateAnActivity(idPassed:times:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
