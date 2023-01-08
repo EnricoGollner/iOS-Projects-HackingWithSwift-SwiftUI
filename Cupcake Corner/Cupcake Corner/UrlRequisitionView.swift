@@ -19,7 +19,7 @@ struct Result: Codable{
     var collectionName: String
 }
 
-struct UrlRequisition: View {
+struct UrlRequisitionView: View {
     @State private var results = [Result]()
     
     var body: some View {
@@ -53,8 +53,8 @@ struct UrlRequisition: View {
     }
 }
 
-struct UrlRequisition_Previews: PreviewProvider {
+struct UrlRequisitionView_Previews: PreviewProvider {
     static var previews: some View {
-        UrlRequisition()
+        UrlRequisitionView()
     }
 }
