@@ -10,14 +10,14 @@ import Foundation
 class Activities: ObservableObject{
     @Published var listOfActivities = [ActivityItem]() {
         didSet{
-            if let encoded = try? JSONEncoder().encode(listOfActivities){
-                UserDefaults.standard.set(encoded, forKey: "listOfActivities")
+            if let encodedListOfActivities = try? JSONEncoder().encode(listOfActivities){
+                UserDefaults.standard.set(encodedListOfActivities, forKey: "listOfActivitiesEncoded")
             }
         }
     }
     
     init(){
-        if let savedListEncoded = UserDefaults.standard.data(forKey: "listofActivities"){
+        if let savedListEncoded = UserDefaults.standard.data(forKey: "listofActivitiesEncoded"){
             if let decodedList = try? JSONDecoder().decode([ActivityItem].self, from: savedListEncoded){
                 listOfActivities = decodedList
                 return
