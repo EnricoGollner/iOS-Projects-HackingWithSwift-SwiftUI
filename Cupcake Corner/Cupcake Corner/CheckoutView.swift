@@ -13,6 +13,9 @@ struct CheckoutView: View {
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
     
+    @State private var failedReqMessage = ""
+    @State private var showingFailedReq = false
+    
     var body: some View {
         ScrollView{
             VStack{
@@ -43,6 +46,11 @@ struct CheckoutView: View {
         } message: {
             Text(confirmationMessage)
         }
+        .alert("Error", isPresented: $showingFailedReq){
+            Button("Okay") {}
+        } message: {
+            Text(failedReqMessage)
+        }
     }
     
     func placeOrder() async{
@@ -52,7 +60,6 @@ struct CheckoutView: View {
         }
         
         let url = URL(string: "https://reqres.in/api/cupcakes")!
-        
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
@@ -64,7 +71,8 @@ struct CheckoutView: View {
             confirmationMessage = "Your order \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on it's way!"
             showingConfirmation = true
         } catch{
-            print("Checkout failed")
+            failedReqMessage = "Checkout failed."
+            showingFailedReq = true
         }
     }
     
