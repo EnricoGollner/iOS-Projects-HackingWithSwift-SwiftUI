@@ -9,7 +9,9 @@ import CoreData
 import Foundation
 
 class DataController: ObservableObject{
-    let container = NSPersistentContainer(name: "Bookworm")  // Core Data type responsible for loading a model and then giving us the access to the data inside
+    let container = NSPersistentContainer(name: "Bookworm") // Core Data type responsible for loading a Data Model and then giving us the access to the data inside
+    
+    // We have the access, now we need to load:
     
     init(){
         container.loadPersistentStores{ description, error in
