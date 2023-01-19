@@ -63,9 +63,8 @@ struct ContentView: View {
         for offset in offsets{
             let book = books[offset]
             moc.delete(book)
-            
-            try? moc.save()
         }
+        try? moc.save()
     }
 }
 
