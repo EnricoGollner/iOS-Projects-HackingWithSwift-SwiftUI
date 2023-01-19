@@ -9,12 +9,10 @@ import CoreData
 import Foundation
 
 class DataController: ObservableObject{
-    let container = NSPersistentContainer(name: "Bookworm") // Core Data type responsible for loading a Data Model and then giving us the access to the data inside
-    
-    // We have the access, now we need to load:
+    let container = NSPersistentContainer(name: "Bookworm")  // Gives us the access control to the Data Model
     
     init(){
-        container.loadPersistentStores{ description, error in
+        container.loadPersistentStores{ description, error in  // Load that data model
             if let error = error{
                 print("Core Data failed to load: \(error.localizedDescription)")
             }
