@@ -11,6 +11,7 @@
 		2A2BBCDF296FDD9C00FA6837 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BBCDD296FDD9C00FA6837 /* Bookworm.xcdatamodeld */; };
 		2A2BBCE1296FDFF300FA6837 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BBCE0296FDFF300FA6837 /* DataController.swift */; };
 		2A39984A29712D7A00CD5BE2 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A39984929712D7A00CD5BE2 /* AddBookView.swift */; };
+		2A55910A297A142800D9987E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A559109297A142800D9987E /* Extensions.swift */; };
 		2A6DADED296E275F008ADFB1 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DADEC296E275F008ADFB1 /* BookwormApp.swift */; };
 		2A6DADEF296E275F008ADFB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DADEE296E275F008ADFB1 /* ContentView.swift */; };
 		2A6DADF1296E2760008ADFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DADF0296E2760008ADFB1 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		2A2BBCDE296FDD9C00FA6837 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		2A2BBCE0296FDFF300FA6837 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2A39984929712D7A00CD5BE2 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		2A559109297A142800D9987E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2A6DADE9296E275F008ADFB1 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DADEC296E275F008ADFB1 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		2A6DADEE296E275F008ADFB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,10 +78,11 @@
 				2A2BBCDA296FD85F00FA6837 /* Studying */,
 				2A6DADEC296E275F008ADFB1 /* BookwormApp.swift */,
 				2A6DADEE296E275F008ADFB1 /* ContentView.swift */,
-				2AF81BF029763FF0009C439F /* DetailView.swift */,
-				2AD8707A2974BE6900EFB881 /* emojiRatingView.swift */,
-				2A96E47A29727E6400D8756E /* RatingView.swift */,
 				2A39984929712D7A00CD5BE2 /* AddBookView.swift */,
+				2A559109297A142800D9987E /* Extensions.swift */,
+				2AD8707A2974BE6900EFB881 /* emojiRatingView.swift */,
+				2AF81BF029763FF0009C439F /* DetailView.swift */,
+				2A96E47A29727E6400D8756E /* RatingView.swift */,
 				2A2BBCE0296FDFF300FA6837 /* DataController.swift */,
 				2A2BBCDD296FDD9C00FA6837 /* Bookworm.xcdatamodeld */,
 				2A6DADF0296E2760008ADFB1 /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A55910A297A142800D9987E /* Extensions.swift in Sources */,
 				2A2BBCE1296FDFF300FA6837 /* DataController.swift in Sources */,
 				2AF81BF129763FF0009C439F /* DetailView.swift in Sources */,
 				2A39984A29712D7A00CD5BE2 /* AddBookView.swift in Sources */,

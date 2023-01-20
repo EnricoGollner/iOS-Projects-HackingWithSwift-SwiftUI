@@ -14,14 +14,24 @@ struct DetailView: View {
     
     let book: Book
     
+    var bookGenre: String{
+        let genre = book.getGenre()
+        
+        if genre.isReallyEmpty(){
+            return "Unknown"
+        }
+        return genre
+    }
+    
     var body: some View {
         ScrollView{
             ZStack(alignment: .bottomTrailing){
-                Image(book.genre ?? "Fantasy")
+                
+                Image(bookGenre)
                     .resizable()
                     .scaledToFit()
                 
-                Text(book.genre?.uppercased() ?? "FANTASY")
+                Text(bookGenre)
                     .font(.caption)
                     .fontWeight(.black)
                     .padding(8)
