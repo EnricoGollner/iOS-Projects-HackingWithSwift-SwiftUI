@@ -20,11 +20,9 @@ class DataController: ObservableObject{
     }
     
     func save(context: NSManagedObjectContext){
-        do{
+        if context.hasChanges{
             try? context.save()
             print("Data saved")
-        } catch{
-            print("We couldn't save the data...")
         }
     }
     

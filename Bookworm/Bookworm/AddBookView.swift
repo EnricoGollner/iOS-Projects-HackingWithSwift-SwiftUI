@@ -42,16 +42,7 @@ struct AddBookView: View {
                 
                 Section{
                     Button("Save") {
-                        let newBook = Book(context: moc)
-                        newBook.id = UUID()
-                        newBook.title = title
-                        newBook.author = author
-                        newBook.rating = Int16(rating)
-                        newBook.genre = genre
-                        newBook.review = review
-                        newBook.date = Date.now
-                        
-                        try? moc.save()  // Write those changes out
+                        DataController().addAndSave(title: title, author: author, rating: rating, genre: genre, review: review, context: moc)
                         dismiss()
                     }
                     .disabled(title.isReallyEmpty() || author.isReallyEmpty())

@@ -18,4 +18,19 @@ class DataController: ObservableObject{
             }
         }
     }
+    
+    func addAndSave(title: String, author: String, rating: Int, genre: String, review: String, context: NSManagedObjectContext){
+        let newBook = Book(context: context)
+        newBook.id = UUID()
+        newBook.title = title
+        newBook.author = author
+        newBook.rating = Int16(rating)
+        newBook.genre = genre
+        newBook.review = review
+        newBook.date = Date.now
+        
+        if context.hasChanges{
+            try? context.save()  // Write those changes out
+        }
+    }
 }

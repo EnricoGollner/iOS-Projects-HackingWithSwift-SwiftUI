@@ -12,7 +12,10 @@ struct ContentView: View {
     
     var body: some View {
         Button("Save"){
-            try? moc.save()
+            
+            if moc.hasChanges{
+                try? moc.save()
+            }
         }
     }
 }
