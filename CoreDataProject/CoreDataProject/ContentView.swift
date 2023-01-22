@@ -7,16 +7,12 @@
 
 import SwiftUI
 
-struct Student: Hashable{
-    let name: String
-}
-
 struct ContentView: View {
-    var student = [Student(name: "Harry Potter"), Student(name: "Hermione Granger")]
+    @Environment(\.managedObjectContext) var moc
     
     var body: some View {
-        List(student, id: \.self){ student in
-            Text("\(student.name)")
+        Button("Save"){
+            try? moc.save()
         }
     }
 }

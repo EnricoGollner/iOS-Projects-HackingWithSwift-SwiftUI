@@ -5,17 +5,16 @@
 //  Created by Enrico Sousa Gollner on 22/01/23.
 //
 
-import CoreData
-import Foundation
+import SwiftUI
 
-class DataController: ObservableObject{
-    let container = NSPersistentContainer(name: "CoreDataProject")
-    
-    init(){
-        container.loadPersistentStores{ description, error in
-            if let error = error{
-                print("Error in load Core Data: \(error.localizedDescription)")
-            }
-        }
+struct DataController: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct DataController_Previews: PreviewProvider {
+    static var previews: some View {
+        DataController()
     }
 }
