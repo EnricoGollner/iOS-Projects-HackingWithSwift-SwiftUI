@@ -9,12 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
     
-    var body: some View {
-        Button("Save"){
+    var body: some View{
+        VStack{
+            List(wizards, id: \.self){ wizard in
+                Text(wizard.name ?? "Unknown Name")
+            }
             
-            if moc.hasChanges{
-                try? moc.save()
+            Button("Add"){
+                let wizard = Wizard(context: moc)
+                wizard.name = "Harry Potter"
+            }
+            
+            Button("Save"){
+                do{
+                    if moc.hasChanges{
+                        try moc.save()
+                    } else{
+                        print("No changes, no work needed.")
+                    }
+                } catch{
+                    print(error.localizedDescription)
+                }
             }
         }
     }

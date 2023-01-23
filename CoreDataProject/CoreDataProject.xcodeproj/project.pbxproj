@@ -8,27 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2A2E5B4A297DAE910041795A /* StudentHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E5B49297DAE910041795A /* StudentHashable.swift */; };
-		2A2E5B4D297DAF620041795A /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E5B4B297DAF620041795A /* CoreDataProject.xcdatamodeld */; };
 		2A2E5B50297DAFAB0041795A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E5B4F297DAFAB0041795A /* DataController.swift */; };
-		2A2E5B53297DB06A0041795A /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E5B51297DB06A0041795A /* Movie+CoreDataClass.swift */; };
-		2A2E5B54297DB06A0041795A /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E5B52297DB06A0041795A /* Movie+CoreDataProperties.swift */; };
 		2A3C1F0F297DAD590047391B /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C1F0E297DAD590047391B /* CoreDataProjectApp.swift */; };
 		2A3C1F11297DAD590047391B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C1F10297DAD590047391B /* ContentView.swift */; };
 		2A3C1F13297DAD5A0047391B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C1F12297DAD5A0047391B /* Assets.xcassets */; };
 		2A3C1F16297DAD5A0047391B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C1F15297DAD5A0047391B /* Preview Assets.xcassets */; };
+		2A42EDFE297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EDFC297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A2E5B49297DAE910041795A /* StudentHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHashable.swift; sourceTree = "<group>"; };
-		2A2E5B4C297DAF620041795A /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		2A2E5B4F297DAFAB0041795A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		2A2E5B51297DB06A0041795A /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		2A2E5B52297DB06A0041795A /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A3C1F0B297DAD590047391B /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3C1F0E297DAD590047391B /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		2A3C1F10297DAD590047391B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A3C1F12297DAD5A0047391B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3C1F15297DAD5A0047391B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A42EDFD297E0EE000EA8DAA /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +41,7 @@
 		2A2E5B4E297DAF660041795A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				2A2E5B51297DB06A0041795A /* Movie+CoreDataClass.swift */,
-				2A2E5B52297DB06A0041795A /* Movie+CoreDataProperties.swift */,
-				2A2E5B4B297DAF620041795A /* CoreDataProject.xcdatamodeld */,
+				2A42EDFC297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld */,
 				2A2E5B4F297DAFAB0041795A /* DataController.swift */,
 			);
 			path = DataModel;
@@ -171,10 +165,8 @@
 				2A2E5B50297DAFAB0041795A /* DataController.swift in Sources */,
 				2A3C1F11297DAD590047391B /* ContentView.swift in Sources */,
 				2A2E5B4A297DAE910041795A /* StudentHashable.swift in Sources */,
-				2A2E5B4D297DAF620041795A /* CoreDataProject.xcdatamodeld in Sources */,
-				2A2E5B53297DB06A0041795A /* Movie+CoreDataClass.swift in Sources */,
-				2A2E5B54297DB06A0041795A /* Movie+CoreDataProperties.swift in Sources */,
 				2A3C1F0F297DAD590047391B /* CoreDataProjectApp.swift in Sources */,
+				2A42EDFE297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +369,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2A2E5B4B297DAF620041795A /* CoreDataProject.xcdatamodeld */ = {
+		2A42EDFC297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2A2E5B4C297DAF620041795A /* CoreDataProject.xcdatamodel */,
+				2A42EDFD297E0EE000EA8DAA /* CoreDataProject.xcdatamodel */,
 			);
-			currentVersion = 2A2E5B4C297DAF620041795A /* CoreDataProject.xcdatamodel */;
+			currentVersion = 2A42EDFD297E0EE000EA8DAA /* CoreDataProject.xcdatamodel */;
 			path = CoreDataProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

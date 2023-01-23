@@ -15,7 +15,12 @@ class DataController: ObservableObject{
         container.loadPersistentStores{ description, error in
             if let error = error{
                 print("Failed to load the data: \(error.localizedDescription)")
+                return
             }
+            
+            //  Ensuring Core Data Objects are unique using constraints in Data Model Wizard Entity
+            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+            
         }
     }
 }
