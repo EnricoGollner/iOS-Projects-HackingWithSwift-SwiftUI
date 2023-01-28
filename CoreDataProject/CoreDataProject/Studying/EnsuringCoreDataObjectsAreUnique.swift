@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct EnsuringCoreDataObjectsAreUnique: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
+    
+    var body: some View{
+        VStack{
+            List(wizards, id: \.self){ wizard in
+                Text(wizard.name ?? "Unknown Name")
+            }
+            
+            Button("Add"){
+                let wizard = Wizard(context: moc)
+                wizard.name = "Harry Potter"
+            }
+            
+            Button("Save"){
+                do{
+                    if moc.hasChanges{
+                        try moc.save()
+                    } else{
+                        print("No changes, no work needed.")
+                    }
+                } catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
 
