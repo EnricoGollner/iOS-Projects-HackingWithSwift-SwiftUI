@@ -12,11 +12,14 @@
 		2A3C1F11297DAD590047391B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C1F10297DAD590047391B /* ContentView.swift */; };
 		2A3C1F13297DAD5A0047391B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C1F12297DAD5A0047391B /* Assets.xcassets */; };
 		2A3C1F16297DAD5A0047391B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C1F15297DAD5A0047391B /* Preview Assets.xcassets */; };
+		2A3E9B72298507C10083655F /* NotFurther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E9B71298507C10083655F /* NotFurther.swift */; };
+		2A3E9B74298507D00083655F /* Further.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E9B73298507D00083655F /* Further.swift */; };
+		2A3E9B762985086A0083655F /* FilteredListNotFurther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E9B752985086A0083655F /* FilteredListNotFurther.swift */; };
 		2A42EDFE297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EDFC297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld */; };
 		2AFF0B792984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0B782984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift */; };
 		2AFF0B7C2984DE5E008E2D06 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0B7A2984DE5E008E2D06 /* Singer+CoreDataClass.swift */; };
 		2AFF0B7D2984DE5E008E2D06 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0B7B2984DE5E008E2D06 /* Singer+CoreDataProperties.swift */; };
-		2AFF0B7F2984E071008E2D06 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0B7E2984E071008E2D06 /* FilteredList.swift */; };
+		2AFF0B7F2984E071008E2D06 /* FilteredListFurther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0B7E2984E071008E2D06 /* FilteredListFurther.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +29,14 @@
 		2A3C1F10297DAD590047391B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A3C1F12297DAD5A0047391B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3C1F15297DAD5A0047391B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A3E9B71298507C10083655F /* NotFurther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFurther.swift; sourceTree = "<group>"; };
+		2A3E9B73298507D00083655F /* Further.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Further.swift; sourceTree = "<group>"; };
+		2A3E9B752985086A0083655F /* FilteredListNotFurther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredListNotFurther.swift; sourceTree = "<group>"; };
 		2A42EDFD297E0EE000EA8DAA /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		2AFF0B782984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringFetchRequestWithNSPredicator.swift; sourceTree = "<group>"; };
 		2AFF0B7A2984DE5E008E2D06 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2AFF0B7B2984DE5E008E2D06 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		2AFF0B7E2984E071008E2D06 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		2AFF0B7E2984E071008E2D06 /* FilteredListFurther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredListFurther.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				2AFF0B772984DB4B008E2D06 /* Learning */,
-				2AFF0B7A2984DE5E008E2D06 /* Singer+CoreDataClass.swift */,
-				2AFF0B7B2984DE5E008E2D06 /* Singer+CoreDataProperties.swift */,
 				2A3C1F0E297DAD590047391B /* CoreDataProjectApp.swift */,
 				2A3C1F10297DAD590047391B /* ContentView.swift */,
-				2AFF0B7E2984E071008E2D06 /* FilteredList.swift */,
 				2A2E5B4E297DAF660041795A /* DataModel */,
 				2A3C1F12297DAD5A0047391B /* Assets.xcassets */,
 				2A3C1F14297DAD5A0047391B /* Preview Content */,
@@ -93,10 +96,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2AFF0B772984DB4B008E2D06 /* Learning */ = {
+		2A3E9B6F2985076B0083655F /* Dynamically filtering @FetchRequest with SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2AFF0B7A2984DE5E008E2D06 /* Singer+CoreDataClass.swift */,
+				2AFF0B7B2984DE5E008E2D06 /* Singer+CoreDataProperties.swift */,
+				2A3E9B71298507C10083655F /* NotFurther.swift */,
+				2A3E9B752985086A0083655F /* FilteredListNotFurther.swift */,
+				2A3E9B73298507D00083655F /* Further.swift */,
+				2AFF0B7E2984E071008E2D06 /* FilteredListFurther.swift */,
+			);
+			path = "Dynamically filtering @FetchRequest with SwiftUI";
+			sourceTree = "<group>";
+		};
+		2A3E9B70298507990083655F /* FilteringFetchRequestWithNSPredicator */ = {
 			isa = PBXGroup;
 			children = (
 				2AFF0B782984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift */,
+			);
+			path = FilteringFetchRequestWithNSPredicator;
+			sourceTree = "<group>";
+		};
+		2AFF0B772984DB4B008E2D06 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E9B70298507990083655F /* FilteringFetchRequestWithNSPredicator */,
+				2A3E9B6F2985076B0083655F /* Dynamically filtering @FetchRequest with SwiftUI */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -171,11 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFF0B7F2984E071008E2D06 /* FilteredList.swift in Sources */,
+				2AFF0B7F2984E071008E2D06 /* FilteredListFurther.swift in Sources */,
 				2AFF0B7D2984DE5E008E2D06 /* Singer+CoreDataProperties.swift in Sources */,
+				2A3E9B74298507D00083655F /* Further.swift in Sources */,
 				2A2E5B50297DAFAB0041795A /* DataController.swift in Sources */,
 				2A3C1F11297DAD590047391B /* ContentView.swift in Sources */,
 				2A3C1F0F297DAD590047391B /* CoreDataProjectApp.swift in Sources */,
+				2A3E9B762985086A0083655F /* FilteredListNotFurther.swift in Sources */,
+				2A3E9B72298507C10083655F /* NotFurther.swift in Sources */,
 				2AFF0B792984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift in Sources */,
 				2A42EDFE297E0EE000EA8DAA /* CoreDataProject.xcdatamodeld in Sources */,
 				2AFF0B7C2984DE5E008E2D06 /* Singer+CoreDataClass.swift in Sources */,
