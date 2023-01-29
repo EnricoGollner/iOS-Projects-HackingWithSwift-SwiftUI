@@ -18,7 +18,7 @@ class DataController: ObservableObject{
                 return
             }
             
-            // self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump -- Ensuring Core Data Objects are unique using constraints in Data Model Wizard Entity
+            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         }
     }
 }

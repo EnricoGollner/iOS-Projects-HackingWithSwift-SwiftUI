@@ -26,7 +26,6 @@ extension Singer {
     var wrappedLastName: String{
         lastName ?? "Unknown"
     }
-
 }
 
 extension Singer : Identifiable {
