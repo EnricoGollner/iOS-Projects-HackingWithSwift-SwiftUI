@@ -11,7 +11,6 @@ import CoreData
 
 
 extension Country {
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Country> {
         return NSFetchRequest<Country>(entityName: "Country")
     }

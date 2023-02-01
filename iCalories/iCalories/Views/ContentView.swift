@@ -66,7 +66,7 @@ struct ContentView: View {
     
     private func deleteFood(at offsets: IndexSet){
         withAnimation{
-            offsets.map{ foods[$0] }.forEach(moc.delete)
+            offsets.map{ foods[$0]  }.forEach(moc.delete)
             
             DataController().save(context: moc)
         }
