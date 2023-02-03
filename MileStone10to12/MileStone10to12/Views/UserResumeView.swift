@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct UserResumeView: View {
-    var users: [LoadedUser]
+    @State var users = [LoadedUser]()
     
     var body: some View {
         List{
             ForEach(users) { user in
                 NavigationLink{
-                    UserDetailView(user: user)
+                    UserDetailView(users: users, user: user)
                 } label: {
                     HStack{
                         VStack(alignment: .leading){
@@ -32,61 +32,25 @@ struct UserResumeView: View {
                         }
                     }
                 }
-                UserResumeView(users: users)
             }
             .onDelete(perform: deleteUser)
+        }
+        .listStyle(.plain)
+        .navigationTitle("FriendFace")
+        .toolbar{
+            EditButton()
+        }
+        .task {
+            if users.isEmpty{
+                users = await Helpers().loadData()
+            }
         }
     }
     
     func deleteUser(at offsets: IndexSet){
         for offset in offsets{
             users.remove(at: offset)
+            
         }
     }
-
 }
-
-
-struct UserDetailView: View {
-    let user: LoadedUser
-    
-    @State private var showFriends = false
-    
-    var body: some View {
-        List{
-            Section(header: Text("Name")){
-                Text(user.name)
-            }
-            
-            Section(header: Text("Age")){
-                Text("\(user.age)")
-            }
-            
-            Section(header: Text("Company")){
-                Text(user.company ?? "No company")
-            }
-            
-            Section(header: Text("Status")){
-                Text("\(user.isActive ? "✅" : "❌")")
-            }
-            
-            Section(header: Text("Swip to show the friends")){
-                Toggle(isOn: $showFriends){
-                    Text("Show \(user.name)'s firends")
-                }
-            }
-            
-            if showFriends{
-                Section(header: Text("\(user.name)'s friends")){
-                    NavigationLink{
-                        FriendsListView(user: user)
-                    } label: {
-                        Label("Show \(user.name)'s firends", systemImage: "eye")
-                    }
-                }
-            }
-        }
-        .listStyle(.grouped)
-    }
-}
-

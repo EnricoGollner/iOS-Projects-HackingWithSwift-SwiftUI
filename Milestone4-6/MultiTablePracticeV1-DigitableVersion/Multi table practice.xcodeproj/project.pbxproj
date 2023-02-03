@@ -7,32 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A2A6DB5298B264600E41C6F /* MileStone10to12App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A6DB4298B264600E41C6F /* MileStone10to12App.swift */; };
-		2A2A6DB7298B264600E41C6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A6DB6298B264600E41C6F /* ContentView.swift */; };
-		2A2A6DB9298B264700E41C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2A6DB8298B264700E41C6F /* Assets.xcassets */; };
-		2A2A6DBC298B264700E41C6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2A6DBB298B264700E41C6F /* Preview Assets.xcassets */; };
-		2A33C292298C614E003B9D96 /* LoadedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C291298C614E003B9D96 /* LoadedUser.swift */; };
-		2A33C2A5298C8143003B9D96 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C2A4298C8143003B9D96 /* FriendsListView.swift */; };
-		2A33C2A8298C82D2003B9D96 /* UserResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C2A7298C82D2003B9D96 /* UserResumeView.swift */; };
-		2A3C2F97298CD74200D7B320 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C2F96298CD74200D7B320 /* UserDetailView.swift */; };
-		2A3C2F9A298CD7BA00D7B320 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C2F99298CD7BA00D7B320 /* Funcs.swift */; };
+		2AB2F02B2941674D00624C3D /* MultiTablePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2F02A2941674D00624C3D /* MultiTablePractice.swift */; };
+		2AB2F02D2941674D00624C3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2F02C2941674D00624C3D /* ContentView.swift */; };
+		2AB2F02F2941674D00624C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2F02E2941674D00624C3D /* Assets.xcassets */; };
+		2AB2F0322941674D00624C3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2F0312941674D00624C3D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A2A6DB1298B264600E41C6F /* MileStone10to12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileStone10to12.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A2A6DB4298B264600E41C6F /* MileStone10to12App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileStone10to12App.swift; sourceTree = "<group>"; };
-		2A2A6DB6298B264600E41C6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A2A6DB8298B264700E41C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A2A6DBB298B264700E41C6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2A33C291298C614E003B9D96 /* LoadedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedUser.swift; sourceTree = "<group>"; };
-		2A33C2A4298C8143003B9D96 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
-		2A33C2A7298C82D2003B9D96 /* UserResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResumeView.swift; sourceTree = "<group>"; };
-		2A3C2F96298CD74200D7B320 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
-		2A3C2F99298CD7BA00D7B320 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
+		2AB2F0272941674D00624C3D /* Multi table practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multi table practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB2F02A2941674D00624C3D /* MultiTablePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTablePractice.swift; sourceTree = "<group>"; };
+		2AB2F02C2941674D00624C3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AB2F02E2941674D00624C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB2F0312941674D00624C3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A2A6DAE298B264600E41C6F /* Frameworks */ = {
+		2AB2F0242941674D00624C3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,98 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A2A6DA8298B264600E41C6F = {
+		2AB2F01E2941674C00624C3D = {
 			isa = PBXGroup;
 			children = (
-				2A2A6DB3298B264600E41C6F /* MileStone10to12 */,
-				2A2A6DB2298B264600E41C6F /* Products */,
+				2AB2F0292941674D00624C3D /* Milestone-4-6 */,
+				2AB2F0282941674D00624C3D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2A2A6DB2298B264600E41C6F /* Products */ = {
+		2AB2F0282941674D00624C3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A2A6DB1298B264600E41C6F /* MileStone10to12.app */,
+				2AB2F0272941674D00624C3D /* Multi table practice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A2A6DB3298B264600E41C6F /* MileStone10to12 */ = {
+		2AB2F0292941674D00624C3D /* Milestone-4-6 */ = {
 			isa = PBXGroup;
 			children = (
-				2A2A6DB4298B264600E41C6F /* MileStone10to12App.swift */,
-				2A3C2F98298CD7AA00D7B320 /* Helpers */,
-				2A33C2A6298C814A003B9D96 /* Views */,
-				2A33C291298C614E003B9D96 /* LoadedUser.swift */,
-				2A2A6DB8298B264700E41C6F /* Assets.xcassets */,
-				2A2A6DBA298B264700E41C6F /* Preview Content */,
+				2AB2F02A2941674D00624C3D /* MultiTablePractice.swift */,
+				2AB2F02C2941674D00624C3D /* ContentView.swift */,
+				2AB2F02E2941674D00624C3D /* Assets.xcassets */,
+				2AB2F0302941674D00624C3D /* Preview Content */,
 			);
-			path = MileStone10to12;
+			path = "Milestone-4-6";
 			sourceTree = "<group>";
 		};
-		2A2A6DBA298B264700E41C6F /* Preview Content */ = {
+		2AB2F0302941674D00624C3D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2A2A6DBB298B264700E41C6F /* Preview Assets.xcassets */,
+				2AB2F0312941674D00624C3D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2A33C2A6298C814A003B9D96 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2A2A6DB6298B264600E41C6F /* ContentView.swift */,
-				2A33C2A7298C82D2003B9D96 /* UserResumeView.swift */,
-				2A3C2F96298CD74200D7B320 /* UserDetailView.swift */,
-				2A33C2A4298C8143003B9D96 /* FriendsListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		2A3C2F98298CD7AA00D7B320 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2A3C2F99298CD7BA00D7B320 /* Funcs.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A2A6DB0298B264600E41C6F /* MileStone10to12 */ = {
+		2AB2F0262941674D00624C3D /* Multi table practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A2A6DBF298B264700E41C6F /* Build configuration list for PBXNativeTarget "MileStone10to12" */;
+			buildConfigurationList = 2AB2F0352941674D00624C3D /* Build configuration list for PBXNativeTarget "Multi table practice" */;
 			buildPhases = (
-				2A2A6DAD298B264600E41C6F /* Sources */,
-				2A2A6DAE298B264600E41C6F /* Frameworks */,
-				2A2A6DAF298B264600E41C6F /* Resources */,
+				2AB2F0232941674D00624C3D /* Sources */,
+				2AB2F0242941674D00624C3D /* Frameworks */,
+				2AB2F0252941674D00624C3D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MileStone10to12;
-			productName = MileStone10to12;
-			productReference = 2A2A6DB1298B264600E41C6F /* MileStone10to12.app */;
+			name = "Multi table practice";
+			productName = "Milestone-4-6";
+			productReference = 2AB2F0272941674D00624C3D /* Multi table practice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2A2A6DA9298B264600E41C6F /* Project object */ = {
+		2AB2F01F2941674C00624C3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					2A2A6DB0298B264600E41C6F = {
+					2AB2F0262941674D00624C3D = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 2A2A6DAC298B264600E41C6F /* Build configuration list for PBXProject "MileStone10to12" */;
+			buildConfigurationList = 2AB2F0222941674C00624C3D /* Build configuration list for PBXProject "Multi table practice" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,47 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 2A2A6DA8298B264600E41C6F;
-			productRefGroup = 2A2A6DB2298B264600E41C6F /* Products */;
+			mainGroup = 2AB2F01E2941674C00624C3D;
+			productRefGroup = 2AB2F0282941674D00624C3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A2A6DB0298B264600E41C6F /* MileStone10to12 */,
+				2AB2F0262941674D00624C3D /* Multi table practice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A2A6DAF298B264600E41C6F /* Resources */ = {
+		2AB2F0252941674D00624C3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A2A6DBC298B264700E41C6F /* Preview Assets.xcassets in Resources */,
-				2A2A6DB9298B264700E41C6F /* Assets.xcassets in Resources */,
+				2AB2F0322941674D00624C3D /* Preview Assets.xcassets in Resources */,
+				2AB2F02F2941674D00624C3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A2A6DAD298B264600E41C6F /* Sources */ = {
+		2AB2F0232941674D00624C3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A2A6DB7298B264600E41C6F /* ContentView.swift in Sources */,
-				2A33C2A5298C8143003B9D96 /* FriendsListView.swift in Sources */,
-				2A2A6DB5298B264600E41C6F /* MileStone10to12App.swift in Sources */,
-				2A3C2F9A298CD7BA00D7B320 /* Funcs.swift in Sources */,
-				2A33C292298C614E003B9D96 /* LoadedUser.swift in Sources */,
-				2A3C2F97298CD74200D7B320 /* UserDetailView.swift in Sources */,
-				2A33C2A8298C82D2003B9D96 /* UserResumeView.swift in Sources */,
+				2AB2F02D2941674D00624C3D /* ContentView.swift in Sources */,
+				2AB2F02B2941674D00624C3D /* MultiTablePractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2A2A6DBD298B264700E41C6F /* Debug */ = {
+		2AB2F0332941674D00624C3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		2A2A6DBE298B264700E41C6F /* Release */ = {
+		2AB2F0342941674D00624C3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,14 +259,14 @@
 			};
 			name = Release;
 		};
-		2A2A6DC0298B264700E41C6F /* Debug */ = {
+		2AB2F0362941674D00624C3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MileStone10to12/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone-4-6/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FV2U5727B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -316,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.MileStone10to12;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.netlify.enricogollner.Milestone-4-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		2A2A6DC1298B264700E41C6F /* Release */ = {
+		2AB2F0372941674D00624C3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MileStone10to12/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone-4-6/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FV2U5727B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -345,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.MileStone10to12;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.netlify.enricogollner.Milestone-4-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A2A6DAC298B264600E41C6F /* Build configuration list for PBXProject "MileStone10to12" */ = {
+		2AB2F0222941674C00624C3D /* Build configuration list for PBXProject "Multi table practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A2A6DBD298B264700E41C6F /* Debug */,
-				2A2A6DBE298B264700E41C6F /* Release */,
+				2AB2F0332941674D00624C3D /* Debug */,
+				2AB2F0342941674D00624C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A2A6DBF298B264700E41C6F /* Build configuration list for PBXNativeTarget "MileStone10to12" */ = {
+		2AB2F0352941674D00624C3D /* Build configuration list for PBXNativeTarget "Multi table practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A2A6DC0298B264700E41C6F /* Debug */,
-				2A2A6DC1298B264700E41C6F /* Release */,
+				2AB2F0362941674D00624C3D /* Debug */,
+				2AB2F0372941674D00624C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2A2A6DA9298B264600E41C6F /* Project object */;
+	rootObject = 2AB2F01F2941674C00624C3D /* Project object */;
 }

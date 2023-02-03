@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Users: ObservableObject{
+    @Published var users = [LoadedUser]()
+    
+    
+}
