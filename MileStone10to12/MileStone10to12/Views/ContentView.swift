@@ -35,7 +35,7 @@ struct ContentView: View {
     func loadData() async{
         guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else{
             print("Invalid Url")
-            fatalError()
+            return
         }
         
         do{
