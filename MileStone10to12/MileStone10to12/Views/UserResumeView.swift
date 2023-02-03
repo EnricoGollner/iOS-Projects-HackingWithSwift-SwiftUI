@@ -12,7 +12,7 @@ struct UserResumeView: View {
     
     var body: some View {
         NavigationLink{
-            
+            Text("Soon...")
         } label: {
             HStack{
                 VStack(alignment: .leading){
