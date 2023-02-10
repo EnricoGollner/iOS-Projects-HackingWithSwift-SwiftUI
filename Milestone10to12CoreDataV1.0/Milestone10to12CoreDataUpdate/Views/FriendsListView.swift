@@ -16,5 +16,8 @@ struct FriendsListView: View {
                 Text(friend.wrappedName)
             }
         }
+        .listStyle(.grouped)
+        .navigationTitle("Friends")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

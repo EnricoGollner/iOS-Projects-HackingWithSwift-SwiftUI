@@ -64,6 +64,8 @@ struct UserResumeView: View {
                                 newFriend.name = friend.name
                                 newFriend.user = newUser
                             }
+                            
+                            try? moc.save()
                         }
                     }
                 }
