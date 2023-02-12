@@ -24,16 +24,15 @@ struct ContentView: View {
     }
     
     func loadImage(){
-        guard let inputImage = UIImage(named: "Example") else { return }  // Storing an UIImage
-        let beginImage = CIImage(image: inputImage)  // CIImage
+        guard let inputImage = UIImage(named: "Example") else { return }  // UIImage
+        let beginImage = CIImage(image: inputImage)  // Converting UIImage to CIImage
         
         let context = CIContext()
         let currentFilter = CIFilter.sepiaTone()
         currentFilter.inputImage = beginImage
         
         let amount = 1.0
-        
-        let inputKeys = currentFilter.inputKeys  // Reads what it supports (itensity, radius, scale)
+        let inputKeys = currentFilter.inputKeys
         
         if inputKeys.contains(kCIInputIntensityKey){
             currentFilter.setValue(amount, forKey: kCIInputIntensityKey)
@@ -47,11 +46,11 @@ struct ContentView: View {
             currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey)
         }
         
-        guard let outputImage = currentFilter.outputImage else{ return }  // CIImage
+        guard let outputImage = currentFilter.outputImage else { return }  // CIImage
         
-        if let cgImg = context.createCGImage(outputImage, from: outputImage.extent){
-            let uiImage = UIImage(cgImage: cgImg)  // CGImage to UIImage
-            image = Image(uiImage: uiImage)  // UIImage to SwiftUI Image
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent){  // Converting CIImage to CGImage
+            let uiImage = UIImage(cgImage: cgImage)
+            image = Image(uiImage: uiImage)
         }
     }
 }

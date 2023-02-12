@@ -12,7 +12,7 @@
 //    @Environment(\.managedObjectContext) var moc  // Only used to delete the data
 //
 //    @FetchRequest var fetchRequest: FetchedResults<T>  // we don’t create the fetch request here, because we still don’t know what we’re searching for. Instead, we’re going to create a custom initializer that accepts a filter string and uses that to set the fetchRequest property.
-//    
+//
 //    let content: (T) -> Content
 //
 //    var body: some View {

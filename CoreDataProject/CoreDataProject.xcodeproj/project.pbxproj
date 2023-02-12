@@ -59,6 +59,7 @@
 			children = (
 				2A49D0D6298714C300810336 /* CoreDataProject.xcdatamodeld */,
 				2A2E5B4F297DAFAB0041795A /* DataController.swift */,
+				2A44E86A2997B58600FD1C13 /* Subclasses */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -83,10 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				2AFF0B772984DB4B008E2D06 /* Learning */,
-				2A49D0DF2987162200810336 /* Country+CoreDataClass.swift */,
-				2A49D0E02987162200810336 /* Country+CoreDataProperties.swift */,
-				2A49D0DD2987162200810336 /* Candy+CoreDataClass.swift */,
-				2A49D0DE2987162200810336 /* Candy+CoreDataProperties.swift */,
 				2A3C1F0E297DAD590047391B /* CoreDataProjectApp.swift */,
 				2A3C1F10297DAD590047391B /* ContentView.swift */,
 				2A2E5B4E297DAF660041795A /* DataModel */,
@@ -121,6 +118,17 @@
 				2AFF0B782984DB6D008E2D06 /* FilteringFetchRequestWithNSPredicator.swift */,
 			);
 			path = FilteringFetchRequestWithNSPredicator;
+			sourceTree = "<group>";
+		};
+		2A44E86A2997B58600FD1C13 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				2A49D0DF2987162200810336 /* Country+CoreDataClass.swift */,
+				2A49D0E02987162200810336 /* Country+CoreDataProperties.swift */,
+				2A49D0DD2987162200810336 /* Candy+CoreDataClass.swift */,
+				2A49D0DE2987162200810336 /* Candy+CoreDataProperties.swift */,
+			);
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 		2AFF0B772984DB4B008E2D06 /* Learning */ = {
