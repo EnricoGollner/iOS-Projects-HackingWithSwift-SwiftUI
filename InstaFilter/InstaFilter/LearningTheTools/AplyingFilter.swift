@@ -12,13 +12,15 @@ import SwiftUI
 struct AplyingFilter: View {
     @State private var image: Image?
     
-    var body: some View {
+    var body: some View{
         VStack{
             image?
                 .resizable()
                 .scaledToFit()
         }
-        .onAppear(perform: loadImage)
+        .onAppear{
+            loadImage()
+        }
     }
     
     func loadImage(){
@@ -34,14 +36,6 @@ struct AplyingFilter: View {
         
         if inputKeys.contains(kCIInputIntensityKey){
             currentFilter.setValue(amount, forKey: kCIInputIntensityKey)
-        }
-        
-        if inputKeys.contains(kCIInputRadiusKey){
-            currentFilter.setValue(amount * 200, forKey: kCIInputRadiusKey)
-        }
-        
-        if inputKeys.contains(kCIInputScaleKey){
-            currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey)
         }
         
         guard let outputImage = currentFilter.outputImage else { return }
