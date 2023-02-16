@@ -11,10 +11,10 @@ import SwiftUI
 struct ImagePicker: UIViewControllerRepresentable{
     @Binding var image: UIImage?
     
-    class Coordinator: NSObject, PHPickerViewControllerDelegate {
+    class Coordinator: NSObject, PHPickerViewControllerDelegate{
         var parent: ImagePicker
         
-        init(_ parent: ImagePicker){
+        init(_ parent: ImagePicker) {
             self.parent = parent
         }
         
@@ -23,9 +23,9 @@ struct ImagePicker: UIViewControllerRepresentable{
             
             guard let provider = results.first?.itemProvider else { return }
             
-            if provider.canLoadObject(ofClass: UIImage.self){
-                provider.loadObject(ofClass: UIImage.self){ image, _ in  // NSItemProviderReading? and Error? being passed)
-                    self.parent.image = image as? UIImage  // Type conversion because the image is an optional
+            if provider.canLoadObject(ofClass: UIImage.self) {
+                provider.loadObject(ofClass: UIImage.self){ image, _ in // NSItemProviderReading? and Error? being passed)
+                    self.parent.image = image as? UIImage  // we use typecast because the data we’re provided could in theory be anything. Yes, I know we specifically asked for photos, but PHPickerViewControllerDelegate calls this same method for any kind of media, which is why we need to be careful.
                 }
             }
         }
@@ -45,6 +45,6 @@ struct ImagePicker: UIViewControllerRepresentable{
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(self)  // Passing our ImagePicker struct with the binding into the class, so we can modify the binding from there
+        Coordinator(self)
     }
 }

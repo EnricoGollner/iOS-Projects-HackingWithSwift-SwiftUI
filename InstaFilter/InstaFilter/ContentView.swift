@@ -29,8 +29,8 @@ struct ContentView: View {
     }
     
     func loadImage(){
-        guard let inputImage = inputImage else{ return }
-        image = Image(uiImage: inputImage)
+        guard let uiImage = inputImage else { return }
+        image = Image(uiImage: uiImage)
     }
     
 }
