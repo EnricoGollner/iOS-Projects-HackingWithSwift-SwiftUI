@@ -14,7 +14,7 @@ struct ImagePicker: UIViewControllerRepresentable{
     class Coordinator: NSObject, PHPickerViewControllerDelegate{
         var parent: ImagePicker
         
-        init(_ parent: ImagePicker) {
+        init(_ parent: ImagePicker){
             self.parent = parent
         }
         
@@ -23,9 +23,9 @@ struct ImagePicker: UIViewControllerRepresentable{
             
             guard let provider = results.first?.itemProvider else { return }
             
-            if provider.canLoadObject(ofClass: UIImage.self) {
-                provider.loadObject(ofClass: UIImage.self){ image, _ in // NSItemProviderReading? and Error? being passed)
-                    self.parent.image = image as? UIImage  // we use typecast because the data we’re provided could in theory be anything. Yes, I know we specifically asked for photos, but PHPickerViewControllerDelegate calls this same method for any kind of media, which is why we need to be careful.
+            if provider.canLoadObject(ofClass: UIImage.self){
+                provider.loadObject(ofClass: UIImage.self){ imageProvided, _ in
+                    self.parent.image = imageProvided as? UIImage  // We use typecast because the data we’re provided could in theory be anything. Yes, I know we specifically asked for photos, but PHPickerViewControllerDelegate calls this same method for any kind of media, which is why we need to be careful.
                 }
             }
         }
@@ -33,7 +33,7 @@ struct ImagePicker: UIViewControllerRepresentable{
     
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration()
-        config.filter = .images
+        config.filter = .images  // Only images
         
         let picker = PHPickerViewController(configuration: config)
         picker.delegate = context.coordinator
