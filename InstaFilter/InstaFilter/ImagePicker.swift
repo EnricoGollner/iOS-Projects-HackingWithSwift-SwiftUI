@@ -25,7 +25,7 @@ struct ImagePicker: UIViewControllerRepresentable{
             
             if provider.canLoadObject(ofClass: UIImage.self){
                 provider.loadObject(ofClass: UIImage.self){ imageProvided, _ in
-                    self.parent.image = imageProvided as? UIImage  // We use typecast because the data we’re provided could in theory be anything. Yes, I know we specifically asked for photos, but PHPickerViewControllerDelegate calls this same method for any kind of media, which is why we need to be careful.
+                    self.parent.image = imageProvided as? UIImage
                 }
             }
         }
