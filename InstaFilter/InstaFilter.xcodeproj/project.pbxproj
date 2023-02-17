@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A34790F299F30EC00071C6E /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34790E299F30EC00071C6E /* ImageSaver.swift */; };
+		2A347911299F371800071C6E /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A347910299F371800071C6E /* LoadImage.swift */; };
 		2A400C55299C781E002A189E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A400C54299C781E002A189E /* ImagePicker.swift */; };
 		2A400C57299C7A18002A189E /* AplyingFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A400C56299C7A18002A189E /* AplyingFilter.swift */; };
 		2A44E85D2997B3D900FD1C13 /* InstaFilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44E85C2997B3D900FD1C13 /* InstaFilterApp.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2A34790E299F30EC00071C6E /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		2A347910299F371800071C6E /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		2A400C54299C781E002A189E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2A400C56299C7A18002A189E /* AplyingFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplyingFilter.swift; sourceTree = "<group>"; };
 		2A44E8592997B3D900FD1C13 /* InstaFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +64,8 @@
 				2A478042299970A8006D7938 /* LearningTheTools */,
 				2A44E85C2997B3D900FD1C13 /* InstaFilterApp.swift */,
 				2A44E85E2997B3D900FD1C13 /* ContentView.swift */,
-				2A34790E299F30EC00071C6E /* ImageSaver.swift */,
 				2A400C54299C781E002A189E /* ImagePicker.swift */,
+				2A34790E299F30EC00071C6E /* ImageSaver.swift */,
 				2A44E8602997B3DA00FD1C13 /* Assets.xcassets */,
 				2A44E8622997B3DA00FD1C13 /* Preview Content */,
 			);
@@ -83,6 +85,7 @@
 			children = (
 				2A478043299970E2006D7938 /* onChangeAndConfirmationDialogue.swift */,
 				2A400C56299C7A18002A189E /* AplyingFilter.swift */,
+				2A347910299F371800071C6E /* LoadImage.swift */,
 			);
 			path = LearningTheTools;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A347911299F371800071C6E /* LoadImage.swift in Sources */,
 				2A44E85F2997B3D900FD1C13 /* ContentView.swift in Sources */,
 				2A34790F299F30EC00071C6E /* ImageSaver.swift in Sources */,
 				2A400C55299C781E002A189E /* ImagePicker.swift in Sources */,

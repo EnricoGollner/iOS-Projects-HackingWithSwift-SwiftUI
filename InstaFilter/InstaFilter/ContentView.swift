@@ -5,41 +5,88 @@
 //  Created by Enrico Sousa Gollner on 11/02/23.
 //
 
+import CoreImage
+import CoreImage.CIFilterBuiltins
 import SwiftUI
 
 struct ContentView: View {
     @State private var image: Image?
-    @State private var inputImage: UIImage?
+    @State private var filterIntensity = 0.5
+    
     @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    
+    @State private var currentFilter = CIFilter.sepiaTone()
+    let context = CIContext()
     
     var body: some View{
-        VStack{
-            image?
-                .resizable()
-                .scaledToFit()
-            
-            Button("Select Image"){
-                showingImagePicker = true
-            }
-            
-            Button("Save Image"){
-                guard let inputImage = inputImage else { return }  // Making sure there's an image to save
+        NavigationStack{
+            VStack{
+                ZStack{
+                    Rectangle()
+                        .fill(.secondary)
+                    
+                    Text("Tap to select a picture")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    
+                    image?
+                        .resizable()
+                        .scaledToFit()
+                }
+                .onTapGesture {
+                    showingImagePicker = true
+                }
                 
-                let imageSaver = ImageSaver()
-                imageSaver.writeToPhotoAlbum(image: inputImage)
+                HStack{
+                    Text("Intensity")
+                    Slider(value: $filterIntensity)
+                        .onChange(of: filterIntensity) { _ in applyProcessing() }
+                }
+                .padding(.vertical)
+                
+                HStack{
+                    Button("Change Filter"){
+                        // Change Filter
+                    }
+                    
+                    Spacer()
+                    
+                    Button("Save", action: save)
+                }
             }
+            .padding([.horizontal, .bottom])
+            .navigationTitle("InstaFilter")
+            .onChange(of: inputImage){ _ in loadImage() }
+            .sheet(isPresented: $showingImagePicker){
+                ImagePicker(image: $inputImage)
+            }
+            
         }
-        .sheet(isPresented: $showingImagePicker){
-            ImagePicker(image: $inputImage)
-        }
-        .onChange(of: inputImage){ _ in loadImage() }
     }
     
     func loadImage(){
-        guard let uiImage = inputImage else { return }
-        image = Image(uiImage: uiImage)
+        guard let inputImage = inputImage else { return }
+        
+        let beginImage = CIImage(image: inputImage)
+        currentFilter.setValue(beginImage, forKey: kCIInputImageKey)  // So the filter now knows the image to work with
+        applyProcessing()
     }
     
+    func save() {
+        
+    }
+    
+    func applyProcessing(){
+        currentFilter.intensity = Float(filterIntensity)
+        
+        guard let outputImage = currentFilter.outputImage else { return }
+        
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent){
+            let uiImage = UIImage(cgImage: cgImage)
+            image = Image(uiImage: uiImage)
+        }
+    }
 }
  
 struct ContentView_Previews: PreviewProvider {
