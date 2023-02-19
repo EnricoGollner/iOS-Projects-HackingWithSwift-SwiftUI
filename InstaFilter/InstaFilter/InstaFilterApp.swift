@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct InstaFilterApp: App {
+struct InstaFilterTrainningApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

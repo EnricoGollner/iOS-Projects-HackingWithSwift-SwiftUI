@@ -8,16 +8,18 @@
 import UIKit
 
 class ImageSaver: NSObject {
+    var successHandler: (() -> Void)?
+    var errorHandler: ((Error) -> Void)?
+    
     func writeToPhotoAlbum(image: UIImage){
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
     }
     
     @objc func saveCompleted(_ image: UIImage, didFinishedSaving error: Error?, contextInfo: UnsafeRawPointer){
         if let error = error{
-            print("Error in Save Image: \(error.localizedDescription)")
-            return
+            errorHandler?(error)
+        } else {
+            successHandler?()
         }
-        
-        print("Save Finished!")
     }
 }
