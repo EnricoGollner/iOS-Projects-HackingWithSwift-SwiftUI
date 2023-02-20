@@ -85,18 +85,16 @@ struct ContentView: View {
             }
             .confirmationDialog("Select Filter", isPresented: $showingFilterSheet) {
                 Group{
-                    Button("Bloom"){ setFilter(CIFilter.bloom()) }
+                    Button("Bloom") { setFilter(CIFilter.bloom()) }
                     Button("Crystallize") { setFilter(CIFilter.crystallize()) }
-                    Button("Dither"){ setFilter(CIFilter.dither()) }
-                    Button("Edges"){ setFilter (CIFilter.edges()) }
-                    Button("Gaussian Blur"){ setFilter(CIFilter.gaussianBlur()) }
+                    Button("Dither") { setFilter(CIFilter.dither()) }
+                    Button("Edges") { setFilter (CIFilter.edges()) }
+                    Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
                     Button("Pixellate") { setFilter(CIFilter.pixellate()) }
+                    Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
+                    Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
+                    Button("Vignette") { setFilter(CIFilter.vignette()) }
                 }
-                Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
-                Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
-                Button("Vignette"){ setFilter(CIFilter.vignette()) }
-                Button("Vibrance"){ setFilter(CIFilter.vibrance()) }
-                Button("Zoom Blur"){ setFilter(CIFilter.zoomBlur()) }
                 
                 Button("Cancel", role: .cancel) { }
             } message: {
@@ -155,7 +153,7 @@ struct ContentView: View {
         imageSaver.writeToPhotoAlbum(image: processedImage)
     }
 }
- 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
