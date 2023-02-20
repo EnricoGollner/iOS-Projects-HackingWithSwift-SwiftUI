@@ -6,49 +6,41 @@
 
 import SwiftUI
 
-// The API: https://itunes.apple.com/search?term=pink+floyd&entity=song
-
-struct Response: Codable{
-    var results: [Result]
-}
-
-struct Result: Codable{
-    var trackId: Int
-    var trackName: String
-    var collectionName: String
-}
-
 struct ContentView: View {
-    @State private var results = [Result]()
+    @StateObject var order = Order()
     
     var body: some View {
-        List(results, id: \.trackId){ item in
-            VStack(alignment: .leading){
-                Text(item.trackName)
-                    .font(.headline)
-                Text(item.collectionName)
+        NavigationStack{
+            Form{
+                Section{
+                    Picker("Select your cake type", selection: $order.type){
+                        ForEach(Order.types.indices){
+                            Text(Order.types[$0])
+                        }
+                    }
+                    
+                    Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
+                }
+                
+                Section{
+                    Toggle("Any special requests?", isOn: $order.specialRequestEnabled.animation())
+                    
+                    if order.specialRequestEnabled{
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+                        
+                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                    }
+                }
+                
+                Section{
+                    NavigationLink{
+                        AddressView(order: order)
+                    } label: {
+                        Text("Delivery details")
+                    }
+                }
             }
-        }
-        .task {
-            await loadData()
-        }
-    }
-    
-    func loadData() async{
-        guard let url = URL(string: "https://itunes.apple.com/search?term=pink+floyd&entity=song") else{
-            print("Invalid Url")
-            return
-        }
-        
-        do{
-            let (data, _) = try await URLSession.shared.data(from: url)
-            
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data){
-                results = decodedResponse.results
-            }
-            
-        } catch{
-            print("Invalid Data")
+            .navigationTitle("Cupcake Corner")
         }
     }
 }
