@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  InstaFilterFinal
+//  BucketList
 //
 //  Created by Enrico Sousa Gollner on 19/02/23.
 //
