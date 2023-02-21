@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A30D1C829A51D47008BA618 /* SwitchingViewStatesWithEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */; };
+		2A46140529A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */; };
+		2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */; };
 		2AC603EF29A2F58A007E3931 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC603EE29A2F58A007E3931 /* BucketListApp.swift */; };
 		2AC603F129A2F58A007E3931 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC603F029A2F58A007E3931 /* ContentView.swift */; };
 		2AC603F329A2F58B007E3931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC603F229A2F58B007E3931 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStatesWithEnums.swift; sourceTree = "<group>"; };
+		2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingConformanceToComparableForCustomTypes.swift; sourceTree = "<group>"; };
+		2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittingDataToTheDocumentsDirectory.swift; sourceTree = "<group>"; };
 		2AC603EB29A2F58A007E3931 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC603EE29A2F58A007E3931 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		2AC603F029A2F58A007E3931 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A46140329A46CBE005D9307 /* LearningTheTools */ = {
+			isa = PBXGroup;
+			children = (
+				2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */,
+				2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */,
+				2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */,
+			);
+			path = LearningTheTools;
+			sourceTree = "<group>";
+		};
 		2AC603E229A2F58A007E3931 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +67,7 @@
 		2AC603ED29A2F58A007E3931 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				2A46140329A46CBE005D9307 /* LearningTheTools */,
 				2AC603EE29A2F58A007E3931 /* BucketListApp.swift */,
 				2AC603F029A2F58A007E3931 /* ContentView.swift */,
 				2AC603F229A2F58B007E3931 /* Assets.xcassets */,
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC603F129A2F58A007E3931 /* ContentView.swift in Sources */,
+				2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */,
 				2AC603EF29A2F58A007E3931 /* BucketListApp.swift in Sources */,
+				2A30D1C829A51D47008BA618 /* SwitchingViewStatesWithEnums.swift in Sources */,
+				2A46140529A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
