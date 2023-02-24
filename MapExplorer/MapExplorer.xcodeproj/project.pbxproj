@@ -7,38 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A03ECD429A7046D00615C3A /* AddingUserLocationsToAMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A03ECD329A7046D00615C3A /* AddingUserLocationsToAMap.swift */; };
-		2A03ECD629A70AB700615C3A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A03ECD529A70AB700615C3A /* Location.swift */; };
-		2A30D1C829A51D47008BA618 /* SwitchingViewStatesWithEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */; };
-		2A46140529A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */; };
-		2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */; };
-		2A899F0F29A88B8300878299 /* ImprovingOurMapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A899F0E29A88B8300878299 /* ImprovingOurMapAnnotations.swift */; };
-		2A9A6E0F29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A6E0E29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift */; };
-		2AC603EF29A2F58A007E3931 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC603EE29A2F58A007E3931 /* BucketListApp.swift */; };
-		2AC603F129A2F58A007E3931 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC603F029A2F58A007E3931 /* ContentView.swift */; };
-		2AC603F329A2F58B007E3931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC603F229A2F58B007E3931 /* Assets.xcassets */; };
-		2AC603F629A2F58B007E3931 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC603F529A2F58B007E3931 /* Preview Assets.xcassets */; };
-		2AF2125829A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF2125729A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift */; };
+		2A3AEDF829A8765A00145AFE /* MapExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AEDF729A8765A00145AFE /* MapExplorerApp.swift */; };
+		2A3AEDFA29A8765A00145AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AEDF929A8765A00145AFE /* ContentView.swift */; };
+		2A3AEDFC29A8765B00145AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3AEDFB29A8765B00145AFE /* Assets.xcassets */; };
+		2A3AEDFF29A8765B00145AFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3AEDFE29A8765B00145AFE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A03ECD329A7046D00615C3A /* AddingUserLocationsToAMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingUserLocationsToAMap.swift; sourceTree = "<group>"; };
-		2A03ECD529A70AB700615C3A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStatesWithEnums.swift; sourceTree = "<group>"; };
-		2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingConformanceToComparableForCustomTypes.swift; sourceTree = "<group>"; };
-		2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittingDataToTheDocumentsDirectory.swift; sourceTree = "<group>"; };
-		2A899F0E29A88B8300878299 /* ImprovingOurMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprovingOurMapAnnotations.swift; sourceTree = "<group>"; };
-		2A9A6E0E29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratingMapKitWithSwiftUI.swift; sourceTree = "<group>"; };
-		2AC603EB29A2F58A007E3931 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC603EE29A2F58A007E3931 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
-		2AC603F029A2F58A007E3931 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2AC603F229A2F58B007E3931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AC603F529A2F58B007E3931 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2AF2125729A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTouchIDAndFaceIDWithSwiftUI.swift; sourceTree = "<group>"; };
+		2A3AEDF429A8765A00145AFE /* MapExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3AEDF729A8765A00145AFE /* MapExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExplorerApp.swift; sourceTree = "<group>"; };
+		2A3AEDF929A8765A00145AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A3AEDFB29A8765B00145AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A3AEDFE29A8765B00145AFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AC603E829A2F58A007E3931 /* Frameworks */ = {
+		2A3AEDF129A8765A00145AFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,53 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A46140329A46CBE005D9307 /* LearningTheTools */ = {
+		2A3AEDEB29A8765A00145AFE = {
 			isa = PBXGroup;
 			children = (
-				2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */,
-				2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */,
-				2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */,
-				2A9A6E0E29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift */,
-				2AF2125729A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift */,
-				2A03ECD329A7046D00615C3A /* AddingUserLocationsToAMap.swift */,
-				2A899F0E29A88B8300878299 /* ImprovingOurMapAnnotations.swift */,
-			);
-			path = LearningTheTools;
-			sourceTree = "<group>";
-		};
-		2AC603E229A2F58A007E3931 = {
-			isa = PBXGroup;
-			children = (
-				2AC603ED29A2F58A007E3931 /* BucketList */,
-				2AC603EC29A2F58A007E3931 /* Products */,
+				2A3AEDF629A8765A00145AFE /* MapExplorer */,
+				2A3AEDF529A8765A00145AFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2AC603EC29A2F58A007E3931 /* Products */ = {
+		2A3AEDF529A8765A00145AFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AC603EB29A2F58A007E3931 /* BucketList.app */,
+				2A3AEDF429A8765A00145AFE /* MapExplorer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AC603ED29A2F58A007E3931 /* BucketList */ = {
+		2A3AEDF629A8765A00145AFE /* MapExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				2A46140329A46CBE005D9307 /* LearningTheTools */,
-				2AC603EE29A2F58A007E3931 /* BucketListApp.swift */,
-				2AC603F029A2F58A007E3931 /* ContentView.swift */,
-				2A03ECD529A70AB700615C3A /* Location.swift */,
-				2AC603F229A2F58B007E3931 /* Assets.xcassets */,
-				2AC603F429A2F58B007E3931 /* Preview Content */,
+				2A3AEDF729A8765A00145AFE /* MapExplorerApp.swift */,
+				2A3AEDF929A8765A00145AFE /* ContentView.swift */,
+				2A3AEDFB29A8765B00145AFE /* Assets.xcassets */,
+				2A3AEDFD29A8765B00145AFE /* Preview Content */,
 			);
-			path = BucketList;
+			path = MapExplorer;
 			sourceTree = "<group>";
 		};
-		2AC603F429A2F58B007E3931 /* Preview Content */ = {
+		2A3AEDFD29A8765B00145AFE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2AC603F529A2F58B007E3931 /* Preview Assets.xcassets */,
+				2A3AEDFE29A8765B00145AFE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -102,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AC603EA29A2F58A007E3931 /* BucketList */ = {
+		2A3AEDF329A8765A00145AFE /* MapExplorer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC603F929A2F58B007E3931 /* Build configuration list for PBXNativeTarget "BucketList" */;
+			buildConfigurationList = 2A3AEE0229A8765B00145AFE /* Build configuration list for PBXNativeTarget "MapExplorer" */;
 			buildPhases = (
-				2AC603E729A2F58A007E3931 /* Sources */,
-				2AC603E829A2F58A007E3931 /* Frameworks */,
-				2AC603E929A2F58A007E3931 /* Resources */,
+				2A3AEDF029A8765A00145AFE /* Sources */,
+				2A3AEDF129A8765A00145AFE /* Frameworks */,
+				2A3AEDF229A8765A00145AFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BucketList;
-			productName = BucketList;
-			productReference = 2AC603EB29A2F58A007E3931 /* BucketList.app */;
+			name = MapExplorer;
+			productName = MapExplorer;
+			productReference = 2A3AEDF429A8765A00145AFE /* MapExplorer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AC603E329A2F58A007E3931 /* Project object */ = {
+		2A3AEDEC29A8765A00145AFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					2AC603EA29A2F58A007E3931 = {
+					2A3AEDF329A8765A00145AFE = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 2AC603E629A2F58A007E3931 /* Build configuration list for PBXProject "BucketList" */;
+			buildConfigurationList = 2A3AEDEF29A8765A00145AFE /* Build configuration list for PBXProject "MapExplorer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,50 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 2AC603E229A2F58A007E3931;
-			productRefGroup = 2AC603EC29A2F58A007E3931 /* Products */;
+			mainGroup = 2A3AEDEB29A8765A00145AFE;
+			productRefGroup = 2A3AEDF529A8765A00145AFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AC603EA29A2F58A007E3931 /* BucketList */,
+				2A3AEDF329A8765A00145AFE /* MapExplorer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AC603E929A2F58A007E3931 /* Resources */ = {
+		2A3AEDF229A8765A00145AFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC603F629A2F58B007E3931 /* Preview Assets.xcassets in Resources */,
-				2AC603F329A2F58B007E3931 /* Assets.xcassets in Resources */,
+				2A3AEDFF29A8765B00145AFE /* Preview Assets.xcassets in Resources */,
+				2A3AEDFC29A8765B00145AFE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AC603E729A2F58A007E3931 /* Sources */ = {
+		2A3AEDF029A8765A00145AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC603F129A2F58A007E3931 /* ContentView.swift in Sources */,
-				2AF2125829A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift in Sources */,
-				2A899F0F29A88B8300878299 /* ImprovingOurMapAnnotations.swift in Sources */,
-				2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */,
-				2A9A6E0F29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift in Sources */,
-				2A03ECD629A70AB700615C3A /* Location.swift in Sources */,
-				2AC603EF29A2F58A007E3931 /* BucketListApp.swift in Sources */,
-				2A30D1C829A51D47008BA618 /* SwitchingViewStatesWithEnums.swift in Sources */,
-				2A03ECD429A7046D00615C3A /* AddingUserLocationsToAMap.swift in Sources */,
-				2A46140529A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift in Sources */,
+				2A3AEDFA29A8765A00145AFE /* ContentView.swift in Sources */,
+				2A3AEDF829A8765A00145AFE /* MapExplorerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2AC603F729A2F58B007E3931 /* Debug */ = {
+		2A3AEE0029A8765B00145AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		2AC603F829A2F58B007E3931 /* Release */ = {
+		2A3AEE0129A8765B00145AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,18 +259,17 @@
 			};
 			name = Release;
 		};
-		2AC603FA29A2F58B007E3931 /* Debug */ = {
+		2A3AEE0329A8765B00145AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MapExplorer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FV2U5727B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.BucketList;
+				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.MapExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,18 +288,17 @@
 			};
 			name = Debug;
 		};
-		2AC603FB29A2F58B007E3931 /* Release */ = {
+		2A3AEE0429A8765B00145AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MapExplorer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FV2U5727B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.BucketList;
+				PRODUCT_BUNDLE_IDENTIFIER = app.netlify.enricogollner.MapExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AC603E629A2F58A007E3931 /* Build configuration list for PBXProject "BucketList" */ = {
+		2A3AEDEF29A8765A00145AFE /* Build configuration list for PBXProject "MapExplorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AC603F729A2F58B007E3931 /* Debug */,
-				2AC603F829A2F58B007E3931 /* Release */,
+				2A3AEE0029A8765B00145AFE /* Debug */,
+				2A3AEE0129A8765B00145AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC603F929A2F58B007E3931 /* Build configuration list for PBXNativeTarget "BucketList" */ = {
+		2A3AEE0229A8765B00145AFE /* Build configuration list for PBXNativeTarget "MapExplorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AC603FA29A2F58B007E3931 /* Debug */,
-				2AC603FB29A2F58B007E3931 /* Release */,
+				2A3AEE0329A8765B00145AFE /* Debug */,
+				2A3AEE0429A8765B00145AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2AC603E329A2F58A007E3931 /* Project object */;
+	rootObject = 2A3AEDEC29A8765A00145AFE /* Project object */;
 }
