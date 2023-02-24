@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  ImprovingOurMapAnnotations.swift
 //  BucketList
 //
-//  Created by Enrico Sousa Gollner on 19/02/23.
+//  Created by Enrico Sousa Gollner on 24/02/23.
 //
 
 import MapKit
 import SwiftUI
 
-struct ContentView: View{
+struct ImprovingOurMapAnnotations: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
     
     @State private var locations = [Location]()
@@ -61,8 +61,8 @@ struct ContentView: View{
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ImprovingOurMapAnnotations_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ImprovingOurMapAnnotations()
     }
 }
