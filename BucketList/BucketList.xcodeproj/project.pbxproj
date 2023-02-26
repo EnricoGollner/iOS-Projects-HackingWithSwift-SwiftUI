@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A03ECD429A7046D00615C3A /* AddingUserLocationsToAMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A03ECD329A7046D00615C3A /* AddingUserLocationsToAMap.swift */; };
 		2A03ECD629A70AB700615C3A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A03ECD529A70AB700615C3A /* Location.swift */; };
+		2A1D7F6629AB17CC002A0EDD /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D7F6529AB17CC002A0EDD /* EditView.swift */; };
 		2A30D1C829A51D47008BA618 /* SwitchingViewStatesWithEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */; };
 		2A46140529A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */; };
 		2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		2A03ECD329A7046D00615C3A /* AddingUserLocationsToAMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingUserLocationsToAMap.swift; sourceTree = "<group>"; };
 		2A03ECD529A70AB700615C3A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2A1D7F6529AB17CC002A0EDD /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		2A30D1C729A51D47008BA618 /* SwitchingViewStatesWithEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStatesWithEnums.swift; sourceTree = "<group>"; };
 		2A46140429A46CE8005D9307 /* AddingConformanceToComparableForCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingConformanceToComparableForCustomTypes.swift; sourceTree = "<group>"; };
 		2A46140729A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittingDataToTheDocumentsDirectory.swift; sourceTree = "<group>"; };
@@ -48,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1D7F6729AB17D6002A0EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AC603F029A2F58A007E3931 /* ContentView.swift */,
+				2A1D7F6529AB17CC002A0EDD /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2A46140329A46CBE005D9307 /* LearningTheTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +94,7 @@
 			children = (
 				2A46140329A46CBE005D9307 /* LearningTheTools */,
 				2AC603EE29A2F58A007E3931 /* BucketListApp.swift */,
-				2AC603F029A2F58A007E3931 /* ContentView.swift */,
+				2A1D7F6729AB17D6002A0EDD /* Views */,
 				2A03ECD529A70AB700615C3A /* Location.swift */,
 				2AC603F229A2F58B007E3931 /* Assets.xcassets */,
 				2AC603F429A2F58B007E3931 /* Preview Content */,
@@ -171,6 +182,7 @@
 			files = (
 				2AC603F129A2F58A007E3931 /* ContentView.swift in Sources */,
 				2AF2125829A6A559004248D8 /* UsingTouchIDAndFaceIDWithSwiftUI.swift in Sources */,
+				2A1D7F6629AB17CC002A0EDD /* EditView.swift in Sources */,
 				2A899F0F29A88B8300878299 /* ImprovingOurMapAnnotations.swift in Sources */,
 				2A46140829A46F95005D9307 /* WrittingDataToTheDocumentsDirectory.swift in Sources */,
 				2A9A6E0F29A5D9B5000FE51D /* IntegratingMapKitWithSwiftUI.swift in Sources */,
