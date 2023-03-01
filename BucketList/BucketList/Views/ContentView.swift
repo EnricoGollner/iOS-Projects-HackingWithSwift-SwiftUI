@@ -18,13 +18,13 @@ struct ContentView: View{
     var body: some View {
         ZStack{
             Map(coordinateRegion: $mapRegion, annotationItems: locations){ location in
-                MapAnnotation(coordinate: location.coordinate) {
+                MapAnnotation(coordinate: location.coordinate){
                     VStack{
                         Image(systemName: "star.circle")
                             .resizable()
                             .foregroundColor(.red)
-                            .frame(width: 44, height: 44)  // recommended minimum size for any interactive thing inside your code. Don't go smaller than that
                             .background(.white)
+                            .frame(width: 44, height: 44)
                             .clipShape(Circle())
                         
                         Text(location.name)
@@ -34,6 +34,7 @@ struct ContentView: View{
                         selectedPlace = location
                     }
                 }
+                
             }
             .ignoresSafeArea()
             
@@ -49,9 +50,7 @@ struct ContentView: View{
                     Spacer()
                     
                     Button{
-                        let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
-                        
-                        locations.append(newLocation)
+                        addLocation()
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -71,6 +70,12 @@ struct ContentView: View{
                 }
             }
         }
+    }
+    
+    func addLocation(){
+        let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
+        
+        locations.append(newLocation)
     }
 }
 

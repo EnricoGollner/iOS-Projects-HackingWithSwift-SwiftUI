@@ -15,20 +15,21 @@ struct EditView: View {
     @State private var newName: String
     @State private var newDescription: String
     
-    var body: some View {
+    var body: some View{
         NavigationStack{
-            Form{
-                Section{
-                    TextField("Place name", text: $newName)
-                    
-                    TextField("Description", text: $newDescription)
+            VStack{
+                Form{
+                    Section{
+                        TextField("Place name", text: $newName)
+                        TextField("Description", text: $newDescription)
+                    }
                 }
             }
-            .navigationTitle("Place Details")
+            .navigationTitle("Place details")
             .toolbar{
                 Button("Save"){
                     var newLocation = location
-                    newLocation.id = UUID()
+                    newLocation.id = UUID()  // Because of the equatable func - if the id is the same, the object is the same, so it wouldn't make the changes, so we're forcing it, changing the id -
                     newLocation.name = newName
                     newLocation.description = newDescription
                     
@@ -39,17 +40,19 @@ struct EditView: View {
         }
     }
     
-    init(location: Location, onSave: @escaping (Location) -> Void) {
+    init(location: Location, onSave: @escaping (Location) -> Void){
         self.location = location
         self.onSave = onSave
         
         _newName = State(initialValue: location.name)
         _newDescription = State(initialValue: location.description)
+        
+        
     }
 }
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView(location: Location.example) { _ in }
+        EditView(location: Location.example){ _ in }
     }
 }

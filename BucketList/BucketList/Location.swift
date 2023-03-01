@@ -19,9 +19,9 @@ struct Location: Identifiable, Codable, Equatable{
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
-    static let example = Location(id: UUID(), name: "Buckingham Palace", description: "Where Queen Elizabeth lives with her dorgins.", latitude: 51.501, longitude: -0.141)
+    static let example = Location(id: UUID(), name: "Buckingham Palace", description: "Royal Family Palace", latitude: 51.501, longitude: -0.141)
     
-    static func == (lhs: Location, rhs: Location) -> Bool{
-        lhs.id == rhs.id  // if id is the same, the whole object is the same
+    static func ==(lhs: Location, rhs: Location) -> Bool{
+        lhs.id == rhs.id  // if two locations have the same identifier then we can be sure they are the same without also checking the other properties.
     }
 }
